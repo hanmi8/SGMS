@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>KST</title>
+    <!--[if lt IE 9]>
+    <!--<script src="../pub/html5shiv.js"></script>--><![endif]-->
+    <link rel="stylesheet" href="../pub/reset.css">
+    <link rel="stylesheet" href="../pub/iCheck/custom.css">
+    <link rel="stylesheet" href="../pub/all.css">
+    <link rel="stylesheet" href="../pub/style.css">
+    <script src="../pub/jquery-1.10.2.min.js"></script>
+    <!--<script src="../pub/jquery.touchSwipe.min.js"></script>-->
+    <script src="../pub/iCheck/icheck.min.js"></script>
+    <!--<script src="../pub/function.js"></script>-->
+    <script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+    </script>
+</head>
+<body class="member">
+<div class="topWrap">
+    <img src="../images/BI-white.png" alt="">
+</div>
+<main class="join" id="contents">
+    <header class="page">
+        <h3>아이디/비밀번호 찾기</h3>
+        <ol class="location">
+            <li>HOME</li>
+            <li>아이디/비밀번호 찾기</li>
+        </ol>
+    </header>
+    <article class="join find">
+        <div class="tabs">
+            <ul>
+                <li class="active"><a href="find-id-select.html">아이디 찾기</a></li>
+                <li><a href="find-pw-select.html">비밀번호 찾기</a></li>
+            </ul>
+        </div>
+        <section class="done">
+            <div class="gradationBox">
+                <div class="title">
+                    선박온실가스 종합관리시스템
+                </div>
+                <div class="doneIcon gradation green"><i class="far fa-address-card"></i></div>
+
+                <div class="idDone">
+                    회원님의 아이디는 <br>
+                    <span class="text-primary">coolman</span> 입니다.
+                </div>
+            </div>
+            <div class="btnWrap center">
+                <button class="btn btn-default mainGo" onclick="location.href='login.html'">
+                    로그인 페이지로 이동
+                </button>
+            </div>
+        </section>
+    </article>
+
+</main>
+<footer>
+    <p>Copyright (C) © Ministry of Oceans and Fisheries. <span class="ww">All rights reserve</span></p>
+</footer>
+</body>
+</html>

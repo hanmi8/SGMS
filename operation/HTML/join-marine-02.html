@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>KST</title>
+    <!--[if lt IE 9]>
+    <!--<script src="../pub/html5shiv.js"></script>--><![endif]-->
+    <link rel="stylesheet" href="../pub/reset.css">
+    <link rel="stylesheet" href="../pub/iCheck/custom.css">
+    <link rel="stylesheet" href="../pub/all.css">
+    <link rel="stylesheet" href="../pub/style.css">
+    <script src="../pub/jquery-1.10.2.min.js"></script>
+    <!--<script src="../pub/jquery.touchSwipe.min.js"></script>-->
+    <script src="../pub/iCheck/icheck.min.js"></script>
+    <!--<script src="../pub/function.js"></script>-->
+    <script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+    </script>
+</head>
+<body class="member">
+<div class="topWrap">
+    <img src="../images/BI-white.png" alt="">
+</div>
+<main class="join" id="contents">
+    <header class="page">
+        <h3>회원가입</h3>
+        <ol class="location">
+            <li>HOME</li>
+            <li>회원가입</li>
+            <!--<li>저항절감기술</li>-->
+        </ol>
+    </header>
+    <article class="join step1">
+        <h4>해양수산부 회원가입</h4>
+        <div class="stepProcess third">
+            <ul>
+                <li class="step-01"><span><i class="far fa-file-alt"></i></span>STEP 01.<br> 약관동의</li>
+                <li class="step-02 on"><span><i class="far fa-keyboard"></i></span>STEP 02.<br> 정보입력</li>
+                <li class="step-03"><span><i class="fa fa-clipboard-check"></i></span>STEP 03.<br> 가입완료</li>
+            </ul>
+            <span class="line"></span>
+        </div>
+        <section>
+            <h5>기본정보</h5>
+            <table class="table-horizontal">
+                <colgroup>
+                    <col width="25%">
+                    <col width="*">
+                </colgroup>
+                <tr>
+                    <th><span class="text-warning">*</span> 사용자 성명</th>
+                    <td><input type="text" class="form-control"></td>
+                </tr>
+                <tr>
+                    <th><span class="text-warning">*</span> 사용자 ID</th>
+                    <td><input type="text" class="form-control">
+                        <button class="btn btn-default">중복확인</button>
+                        <span>영문 또는 숫자 6~10자리</span></td>
+                </tr>
+                <tr>
+                    <th><span class="text-warning">*</span> 비밀번호</th>
+                    <td><input type="password" class="form-control"> <span>9~20자의 영문/숫자/특수문자(!@#$%^&+=) 혼합 입력</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th><span class="text-warning">*</span> 비밀번호 확인</th>
+                    <td><input type="password" class="form-control"> <span>비밀번호 확인을 위해 다시 한번 입력해주십시오.</span></td>
+                </tr>
+                <tr>
+                    <th><span class="text-warning">*</span> 휴대전화</th>
+                    <td>
+                        <select class="form-control phone">
+                            <option>선택</option>
+                            <option>010</option>
+                            <option>011</option>
+                            <option>012</option>
+                            <option>016</option>
+                            <option>017</option>
+                            <option>018</option>
+                            <option>019</option>
+                        </select>
+                        -
+                        <input type="text" class="form-control phone"> - <input type="text" class="form-control phone">
+                    </td>
+                </tr>
+                <tr>
+                    <th><span class="text-warning">*</span> 인증</th>
+                    <td><button class="btn btn-default">휴대전화 인증</button></td>
+                </tr>
+                <th><span class="text-warning">*</span> 주소찾기</th>
+                <td>
+                    <input type="text" class="form-control addressNum" readonly>
+                    <button class="btn btn-default">주소조회</button>
+                    <input type="text" class="form-control" readonly>
+                    <span class="block">* 정확한 주소 관리를 위해 “주소조회“ 버튼을 눌러 입력해 주시기 바랍니다.</span>
+                    <input type="text" class="form-control address">
+                </td>
+                </tr>
+                <tr>
+                    <th><span class="text-warning">*</span> E-Mail</th>
+                    <td>
+                        <input type="text" class="form-control email"> @ <input type="text" class="form-control email">
+                        <select class="form-control">
+                            <option>선택하세요</option>
+                        </select>
+                        <span class="block">비밀번호 분실시 사용 되오니 정확한 E-Mail을 정확하게 기입 해 주시기 바랍니다.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th><span class="text-warning">*</span> 뉴스레터 신청</th>
+                    <td>
+                        <div class="radioWrap"><input type="radio" class="i-checks" name="newsLetter"> 수신</div>
+                        <div class="radioWrap"><input type="radio" class="i-checks" name="newsLetter"> 미수신</div>
+                        <div class="radioWrap text-small"><img src="../images/logo_kst.png"> 뉴스를 E-Mail로 받아보실 수 있습니다.</div>
+                    </td>
+                </tr>
+                <tr>
+                    <th><span class="text-warning">*</span> SMS 수신 여부</th>
+                    <td>
+                        <div class="radioWrap"><input type="radio" class="i-checks" name="SMS"> 수신</div>
+                        <div class="radioWrap"><input type="radio" class="i-checks" name="SMS"> 미수신</div>
+                    </td>
+                </tr>
+            </table>
+            <div class="rule">
+                <ul>
+                    <li class="text-warning">(*)표시는 필수적으로 입력하셔야 합니다.</li>
+                    <li>비밀번호는 9~20자의 영문자, 숫자, 특수문자를 혼합하여 사용하시기 바랍니다.</li>
+                    <li>특수문자는 ! , @, # , $ , % , ^ , & , + , = 만 사용가능합니다.</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h5>선택입력사항</h5>
+            <table class="table-horizontal sub">
+                <colgroup>
+                    <col width="25%">
+                    <col width="*">
+                </colgroup>
+                <tr>
+                    <th>연락처</th>
+                    <td>
+                        <select class="form-control phone">
+                            <option>선택</option>
+                            <option>02</option>
+                            <option>031</option>
+                            <option>032</option>
+                            <option>041</option>
+                            <option>042</option>
+                            <option>043</option>
+                            <option>044</option>
+                        </select>
+                        -
+                        <input type="text" class="form-control phone"> - <input type="text" class="form-control phone">
+                    </td>
+                </tr>
+                <tr>
+                    <th>FAX 번호</th>
+                    <td>
+                        <select class="form-control phone">
+                            <option>선택</option>
+                            <option>02</option>
+                            <option>031</option>
+                            <option>032</option>
+                            <option>041</option>
+                            <option>042</option>
+                            <option>043</option>
+                            <option>044</option>
+                        </select>
+                        -
+                        <input type="text" class="form-control phone"> - <input type="text" class="form-control phone">
+                    </td>
+                </tr>
+            </table>
+            <div class="btnWrap center">
+                <button class="btn btn-primary" onclick="location.href='join-marine-03.html'"><i class="fa fa-check"></i> 가입</button>
+                <button class="btn btn-white"><i class="fa fa-times"></i> 취소</button>
+            </div>
+        </section>
+    </article>
+
+</main>
+<footer>
+    <p>Copyright (C) © Ministry of Oceans and Fisheries. <span class="ww">All rights reserve</span></p>
+</footer>
+</body>
+</html>

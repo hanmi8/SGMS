@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>KST</title>
+    <!--[if lt IE 9]>
+    <!--<script src="../pub/html5shiv.js"></script>--><![endif]-->
+    <link rel="stylesheet" href="../pub/reset.css">
+    <link rel="stylesheet" href="../pub/iCheck/custom.css">
+    <link rel="stylesheet" href="../pub/all.css">
+    <link rel="stylesheet" href="../pub/style.css">
+    <script src="../pub/jquery-1.10.2.min.js"></script>
+    <!--<script src="../pub/jquery.touchSwipe.min.js"></script>-->
+    <script src="../pub/iCheck/icheck.min.js"></script>
+    <!--<script src="../pub/function.js"></script>-->
+    <script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+    </script>
+</head>
+<body class="member">
+<div class="topWrap">
+    <img src="../images/BI-white.png" alt="">
+</div>
+<main class="join" id="contents">
+    <header class="page">
+        <h3>회원가입</h3>
+        <ol class="location">
+            <li>HOME</li>
+            <li>회원가입</li>
+            <!--<li>저항절감기술</li>-->
+        </ol>
+    </header>
+    <article class="join step0">
+        <div class="governing">
+            SGMS에는 회원 유형에 따라 가입 절차가 다르오니 편리한 회원가입을 위해 고객님께서 해당하는 유형을 선택 해 주세요.
+        </div>
+        <div class="divideLine"></div>
+        <div class="alertText">
+            <span class="alertTitle">알려드립니다</span>
+            <span>시스템의 권한 요청에 따라 해양수산부 및 선박안전기술공단에서 별도의 시스템 권한을 부여 합니다.</span>
+        </div>
+        <div class="btnWrap">
+            <ul>
+                <li class="maritime">
+                    <button class="btn btn-primary" onclick="location.href='join-marine-01.html'">
+                        <i></i>
+                        해양수산부
+                    </button>
+                </li>
+                <li class="manage">
+                    <button class="btn btn-primary" onclick="location.href='join-verify-01.html'">
+                        <i></i>
+                        주관기관
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </article>
+
+</main>
+<footer>
+    <p>Copyright (C) © Ministry of Oceans and Fisheries. <span class="ww">All rights reserve</span></p>
+</footer>
+</body>
+</html>

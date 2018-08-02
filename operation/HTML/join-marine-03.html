@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>KST</title>
+    <!--[if lt IE 9]>
+    <!--<script src="../pub/html5shiv.js"></script>--><![endif]-->
+    <link rel="stylesheet" href="../pub/reset.css">
+    <link rel="stylesheet" href="../pub/iCheck/custom.css">
+    <link rel="stylesheet" href="../pub/all.css">
+    <link rel="stylesheet" href="../pub/style.css">
+    <script src="../pub/jquery-1.10.2.min.js"></script>
+    <!--<script src="../pub/jquery.touchSwipe.min.js"></script>-->
+    <script src="../pub/iCheck/icheck.min.js"></script>
+    <!--<script src="../pub/function.js"></script>-->
+    <script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+    </script>
+</head>
+<body class="member">
+<div class="topWrap">
+    <img src="../images/BI-white.png" alt="">
+</div>
+<main class="join" id="contents">
+    <header class="page">
+        <h3>회원가입</h3>
+        <ol class="location">
+            <li>HOME</li>
+            <li>회원가입</li>
+            <!--<li>저항절감기술</li>-->
+        </ol>
+    </header>
+    <article class="join step3">
+        <h4>해양수산부 회원가입</h4>
+        <div class="stepProcess third">
+            <ul>
+                <li class="step-01"><span><i class="far fa-file-alt"></i></span>STEP 01.<br> 약관동의</li>
+                <li class="step-02"><span><i class="far fa-keyboard"></i></span>STEP 02.<br> 정보입력</li>
+                <li class="step-03 on"><span><i class="fa fa-clipboard-check"></i></span>STEP 03.<br> 가입완료</li>
+            </ul>
+            <span class="line"></span>
+        </div>
+        <section class="done">
+            <div class="title">선박온실가스 종합관리시스템</div>
+            <i class="fa fa-check"></i>
+            <div class="parag"><span class="text-primary">@홍길동</span>님의 회원가입 신청이 완료되었습니다.</div>
+            <div class="infoBox">
+                <ul>
+                    <li><label>회원구분 :</label><span>해양수산부</span></li>
+                    <li><label>아이디 :</label><span>hgd123</span></li>
+                </ul>
+            </div>
+            <!--<div class="alertText text-warning">-->
+                <!--해운업계 시스템관리자는 승인이 필요합니다.<br>-->
+                <!--선박안전기술공단으로 공문을 통하여 요청하여 주세요.-->
+            <!--</div>-->
+            <div class="btnWrap center">
+                <button class="btn btn-default mainGo" onclick="location.href='login.html'">로그인 페이지로 이동</button>
+            </div>
+        </section>
+    </article>
+
+</main>
+<footer>
+    <p>Copyright (C) © Ministry of Oceans and Fisheries. <span class="ww">All rights reserve</span></p>
+</footer>
+</body>
+</html>

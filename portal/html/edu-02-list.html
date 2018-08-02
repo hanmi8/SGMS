@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>KST</title>
+    <!--[if lt IE 9]>
+    <script src="../pub/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="../pub/reset.css">
+    <link rel="stylesheet" href="../pub/all.css">
+    <link rel="stylesheet" href="../pub/style.css">
+    <script src="../pub/jquery-1.10.2.min.js"></script>
+    <script src="../pub/jquery.touchSwipe.min.js"></script>
+    <script src="../pub/function.js"></script>
+
+</head>
+<body class="member">
+<header class="common">
+    <div class="bodyWrap">
+        <h1><a href="index.html">SGMS 선박온실가스 종합관리시스템 SHIP'S GREENHOUSE GASES MANAGEMENT SYSTEM</a></h1>
+        <div class="access">
+            <a href="#gnb">메뉴 바로가기</a>
+            <a href="#contents">내용 바로가기</a>
+        </div>
+        <nav class="top">
+            <a href="guide-05.html" target="_self">사이트맵</a>
+            <a href="#none" target="_self">ENGLISH</a>
+        </nav>
+        <button type="button" class="menu"><span>메뉴</span></button>
+    </div>
+</header>
+<nav class="gnb" id="gnb">
+    <div class="bodyWrap">
+        <button type="button" class="menu"><span>전체보기/닫기</span></button>
+        <section class="login">
+            <p>로그인이 필요한 서비스입니다</p>
+            <button type="button">로그인</button>
+        </section>
+        <ul class="menu">
+            <li>
+                <button type="button">SGMS소개</button>
+                <div class="depth2">
+                    <ul>
+                        <li><a href="intro-system.html" target="_self">SGMS 소개</a></li>
+                        <li><a href="intro-search.html" target="_self">일제조사</a></li>
+                        <li><a href="intro-target.html" target="_self">목표관리제</a></li>
+                        <li><a href="intro-IMO.html" target="_self">IMO DCS</a></li>
+                        <li><a href="intro-BI.html" target="_self">BI</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <button type="button">통계정보</button>
+                <div class="depth2">
+                    <dl>
+                        <dt>선박 통계정보</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#none" target="_self">선박 통계정보 소개</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>연안해운 통계정보</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#none" target="_self">선종별배출현황 </a></li>
+                                <li><a href="#none" target="_self">톤급별배출현황 </a></li>
+                                <li><a href="#none" target="_self">선박등록관청별배출현황 </a></li>
+                                <li><a href="#none" target="_self">선박연료유사용현황 </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>국제해운 통계정보</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#none" target="_self">선박연도별배출량현황 </a></li>
+                                <li><a href="#none" target="_self">톤급별(총톤수)배출현황 </a></li>
+                                <li><a href="#none" target="_self">톤급별(적재톤수)배출현황 </a></li>
+                                <li><a href="#none" target="_self">선박연료유사용현황 </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+            <li>
+                <button type="button">정책&middot;기술정보</button>
+                <div class="depth2">
+                    <dl>
+                        <dt>정책 정보</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="policy-01-list.html" target="_self">해양수산부</a></li>
+                                <li><a href="policy-02-list.html" target="_self">환경부</a></li>
+                                <li><a href="policy-03-list.html" target="_self">국무조정실</a></li>
+                                <li><a href="policy-04-list.html" target="_self">IMO</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>기술 정보</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="tech-01-list.html" target="_self">저항절감기술</a></li>
+                                <li><a href="tech-02-list.html" target="_self">부가물개선기술</a></li>
+                                <li><a href="tech-03-list.html" target="_self">선박기관개선기술</a></li>
+                                <li><a href="tech-04-list.html" target="_self">운항효율화기술</a></li>
+                                <li><a href="tech-05-list.html" target="_self">추진장치개선기술</a></li>
+                                <li><a href="tech-06-list.html" target="_self">감축효과게시판</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+            <li>
+                <button type="button">법령정보</button>
+                <div class="depth2">
+                    <ul>
+                        <li><a href="legal-01-list.html" target="_self">UNFCCC</a></li>
+                        <li><a href="legal-02-list.html" target="_self">IMO</a></li>
+                        <li><a href="legal-03-list.html" target="_self">국내법령</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <button type="button" class="on">SGMS 교육</button>
+                <div class="depth2">
+                    <dl>
+                        <dt>교육수강관리</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="edu-01-list.html" target="_self">연간 교육계획</a></li>
+                                <li><a href="edu-02-list.html" target="_self">개설 교육(수강신청)</a></li>
+                                <li><a href="edu-03-list.html" target="_self">나의 교육조회</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>교육 컨텐츠</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#none" target="_self">법(제도) 소개</a></li>
+                                <li><a href="edu-05.html" target="_self">교육 동영상</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+            <li>
+                <button type="button">이용안내</button>
+                <div class="depth2">
+                    <ul>
+                        <li><a href="guide-01-list.html" target="_self">공지사항</a></li>
+                        <li><a href="guide-02-list.html" target="_self">시스템활용 가이드</a></li>
+                        <li><a href="guide-03-list.html" target="_self">Q&amp;A</a></li>
+                        <li><a href="guide-04.html" target="_self">FAQ</a></li>
+                        <li><a href="guide-05.html" target="_self">사이트맵</a></li>
+                        <li><a href="guide-06.html" target="_self">개인정보처리방침</a></li>
+                        <li><a href="guide-07.html" target="_self">이메일무단 수집거부</a></li>
+                        <li><a href="guide-08.html" target="_self">문의처</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main class="sub edu" id="contents">
+    <nav class="lnb">
+        <h2><span>SGMS 교육</span></h2>
+        <div class="groupMenu">
+            <div class="groupTitle">교육수강관리</div>
+            <a href="edu-01-list.html" target="_self">연간 교육계획</a>
+            <a href="edu-02-list.html" target="_self" class="on">개설 교육(수강신청)</a>
+            <a href="edu-03-list.html" target="_self">나의 교육조회</a>
+        </div>
+        <div class="groupMenu">
+            <div class="groupTitle">교육 컨텐츠</div>
+            <a href="#none" target="_self">법(제도) 소개</a>
+            <a href="edu-05.html" target="_self">교육 동영상</a>
+        </div>
+    </nav>
+    <header class="page">
+        <h3>개설 교육(수강신청)</h3>
+        <ol class="location">
+            <li>HOME</li>
+            <li>SGMS 교육</li>
+            <li>개설 교육(수강신청)</li>
+        </ol>
+    </header>
+    <article class="board list">
+        <!-- search Area -->
+        <section>
+        <div class="searchWrap clearfix">
+            <div class="float left">
+                <form class="form-horizontal">
+                    <label>교육년도 : </label>
+                    <select class="form-control">
+                        <option>전체</option>
+                    </select>
+                </form>
+                <!--<form class="form-horizontal">-->
+                    <!--<label>감축기술명 : </label>-->
+                    <!--<select class="form-control">-->
+                        <!--<option>전체</option>-->
+                    <!--</select>-->
+                <!--</form>-->
+            </div>
+            <div class="float right">
+                <form class="form-horizontal">
+                    <label>교육과정명 :</label>
+                    <input type="text" class="form-control">
+                    <button type="button" class="btn btn-primary">조회</button>
+                </form>
+            </div>
+        </div>
+        <!-- count -->
+        <div class="tableCount clearfix">
+            <div class="float left">
+                <select class="form-control">
+                    <option>15</option>
+                </select>
+            </div>
+            <div class="float right">
+                <span>총 개수(<i>3200</i>)건</span>
+            </div>
+        </div>
+            <table class="table-vertical edu2">
+                <colgroup>
+                    <col width="3%">
+                    <col width="5%">
+                    <col width="*">
+                    <col width="8%">
+                    <col width="8%">
+                    <col width="8%">
+                    <col width="6%">
+                    <col width="6%">
+                    <col width="6%">
+                    <col width="10%">
+                    <col width="5%">
+                    <col width="8%">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>No</th>
+                    <th>교육년도</th>
+                    <th>실행교육명</th>
+                    <th>교육대상</th>
+                    <th>교육기간</th>
+                    <th>신청기간</th>
+                    <th>교육장소</th>
+                    <th>교육일수</th>
+                    <th>교육인원</th>
+                    <th>등록일자</th>
+                    <th>등록자</th>
+                    <th>신청상태</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>2018</td>
+                    <td><a href="edu-02-view.html">2018년도 상반기 목표 관리제도의 이해</a></td>
+                    <td>해운사 담당자</td>
+                    <td>2018.02.12  ~  2018.02.14</td>
+                    <td>2018.02.12  ~  2018.02.14</td>
+                    <td>공단교육장</td>
+                    <td>3일</td>
+                    <td>30명</td>
+                    <td>2018-06-23</td>
+                    <td>kst</td>
+                    <td><button class="btn btn-primary" name="application">신청</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2018</td>
+                    <td><a href="edu-02-view.html">2018년도 상반기 목표 관리제도의 이해</a></td>
+                    <td>해운사 담당자</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>공단교육장</td>
+                    <td>3일</td>
+                    <td>30명</td>
+                    <td>2018-06-23</td>
+                    <td>kst</td>
+                    <td><button class="btn btn-default" name="application">신청</button></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>2018</td>
+                    <td><a href="edu-02-view.html">2018년도 상반기 목표 관리제도의 이해</a></td>
+                    <td>해운사 담당자</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>공단교육장</td>
+                    <td>3일</td>
+                    <td>30명</td>
+                    <td>2018-06-23</td>
+                    <td>kst</td>
+                    <td><button class="btn btn-primary" name="application">신청</button></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>2018</td>
+                    <td><a href="edu-02-view.html">2018년도 상반기 목표 관리제도의 이해</a></td>
+                    <td>해운사 담당자</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>공단교육장</td>
+                    <td>3일</td>
+                    <td>30명</td>
+                    <td>2018-06-23</td>
+                    <td>kst</td>
+                    <td><button class="btn btn-default" name="application">신청</button></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>2018</td>
+                    <td><a href="edu-02-view.html">2018년도 상반기 목표 관리제도의 이해</a></td>
+                    <td>해운사 담당자</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>공단교육장</td>
+                    <td>3일</td>
+                    <td>30명</td>
+                    <td>2018-06-23</td>
+                    <td>kst</td>
+                    <td><button class="btn btn-default" name="application">신청</button></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>2018</td>
+                    <td><a href="edu-02-view.html">2018년도 상반기 목표 관리제도의 이해</a></td>
+                    <td>해운사 담당자</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>공단교육장</td>
+                    <td>3일</td>
+                    <td>30명</td>
+                    <td>2018-06-23</td>
+                    <td>kst</td>
+                    <td><button class="btn btn-primary" name="application">신청</button></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>2018</td>
+                    <td><a href="edu-02-view.html">2018년도 상반기 목표 관리제도의 이해</a></td>
+                    <td>해운사 담당자</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>공단교육장</td>
+                    <td>3일</td>
+                    <td>30명</td>
+                    <td>2018-06-23</td>
+                    <td>kst</td>
+                    <td><button class="btn btn-primary" name="application">신청</button></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>2018</td>
+                    <td><a href="edu-02-view.html">2018년도 상반기 목표 관리제도의 이해</a></td>
+                    <td>해운사 담당자</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>공단교육장</td>
+                    <td>3일</td>
+                    <td>30명</td>
+                    <td>2018-06-23</td>
+                    <td>kst</td>
+                    <td><button class="btn btn-default" name="application">신청</button></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>2018</td>
+                    <td><a href="edu-02-view.html">2018년도 상반기 목표 관리제도의 이해</a></td>
+                    <td>해운사 담당자</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>공단교육장</td>
+                    <td>3일</td>
+                    <td>30명</td>
+                    <td>2018-06-23</td>
+                    <td>kst</td>
+                    <td><button class="btn btn-default" name="application">신청</button></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>2018</td>
+                    <td><a href="edu-02-view.html">2018년도 상반기 목표 관리제도의 이해</a></td>
+                    <td>해운사 담당자</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>공단교육장</td>
+                    <td>3일</td>
+                    <td>30명</td>
+                    <td>2018-06-23</td>
+                    <td>kst</td>
+                    <td><button class="btn btn-default" name="application">신청</button></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>2018</td>
+                    <td><a href="edu-02-view.html">2018년도 상반기 목표 관리제도의 이해</a></td>
+                    <td>해운사 담당자</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>공단교육장</td>
+                    <td>3일</td>
+                    <td>30명</td>
+                    <td>2018-06-23</td>
+                    <td>kst</td>
+                    <td><button class="btn btn-default" name="application">신청</button></td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>2018</td>
+                    <td><a href="edu-02-view.html">2018년도 상반기 목표 관리제도의 이해</a></td>
+                    <td>해운사 담당자</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>공단교육장</td>
+                    <td>3일</td>
+                    <td>30명</td>
+                    <td>2018-06-23</td>
+                    <td>kst</td>
+                    <td><button class="btn btn-default" name="application">신청</button></td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>2018</td>
+                    <td><a href="edu-02-view.html">2018년도 상반기 목표 관리제도의 이해</a></td>
+                    <td>해운사 담당자</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>공단교육장</td>
+                    <td>3일</td>
+                    <td>30명</td>
+                    <td>2018-06-23</td>
+                    <td>kst</td>
+                    <td><button class="btn btn-default" name="application">신청</button></td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>2018</td>
+                    <td><a href="edu-02-view.html">2018년도 상반기 목표 관리제도의 이해</a></td>
+                    <td>해운사 담당자</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>공단교육장</td>
+                    <td>3일</td>
+                    <td>30명</td>
+                    <td>2018-06-23</td>
+                    <td>kst</td>
+                    <td><button class="btn btn-default" name="application">신청</button></td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>2018</td>
+                    <td><a href="edu-02-view.html">2018년도 상반기 목표 관리제도의 이해</a></td>
+                    <td>해운사 담당자</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>2018.02.12 ~ 2018.02.14</td>
+                    <td>공단교육장</td>
+                    <td>3일</td>
+                    <td>30명</td>
+                    <td>2018-06-23</td>
+                    <td>kst</td>
+                    <td><button class="btn btn-default" name="application">신청</button></td>
+                </tr>
+                </tbody>
+            </table>
+            <!-- paginate -->
+            <div class="paginate">
+                <a href="#" class="prev double"><i class="fa fa-angle-double-left"></i></a>
+                <a href="#" class="prev"><i class="fa fa-angle-left"></i></a>
+                <a href="#"><span>1</span></a>
+                <a href="#"><span>2</span></a>
+                <a href="#"><span>3</span></a>
+                <strong>4</strong>
+                <a href="#"><span>5</span></a>
+                <a href="#"><span>6</span></a>
+                <a href="#"><span>7</span></a>
+                <a href="#"><span>8</span></a>
+                <a href="#"><span>9</span></a>
+                <a href="#"><span>10</span></a>
+                <a href="#" class="next"><i class="fa fa-angle-right"></i></a>
+                <a href="#" class="next double"><i class="fa fa-angle-double-right"></i></a>
+            </div>
+            <div class="btnWrap right excelDownload">
+                <button class="btn btn-primary" name="excelDownload">엑셀 다운로드</button>
+            </div>
+
+        </section>
+    </article>
+
+</main>
+<div class="modal inmodal" id="application">
+    <div class="modal-dialog animated fadeInDown">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <a class="close"><i class="fa fa-times"></i></a>
+                <div class="modal-title">알려드립니다.</div>
+            </div>
+            <div class="modal-body">
+                교육을 신청하시겠습니까?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">확인</button>
+                <button type="button" class="btn btn-white cancle">취소</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal inmodal" id="excelDownload">
+    <div class="modal-dialog animated fadeInDown">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <a class="close"><i class="fa fa-times"></i></a>
+                <div class="modal-title">알려드립니다.</div>
+            </div>
+            <div class="modal-body">
+                자료를 다운로드 하시겠습니까?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">확인</button>
+                <button type="button" class="btn btn-white cancle">취소</button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="common">
+    <section class="information">
+        <div class="bodyWrap">
+            <ul class="policy">
+                <li><a href="guide-06.html" target="_self">개인정보 처리방침</a></li>
+                <li><a href="guide-07.html" target="_self">이메일 무단수집 거부</a></li>
+            </ul>
+            <h2>해양수산부</h2>
+            <address><span class="postNum">30110</span> <span class="ww">세종특별자치시 다솜2로 94(어진동) 정부세종청사 5동</span></address>
+            <dl class="contact">
+                <dt>해양수산부안내전화</dt>
+                <dd>044-330-2380</dd>
+            </dl>
+            <p>Copyright (C) © Ministry of Oceans and Fisheries. <span class="ww">All rights reserve</span></p>
+        </div>
+    </section>
+</footer>
+</body>
+</html>

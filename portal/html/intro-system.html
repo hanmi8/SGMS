@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="X-UA-compatible" content="ie=edge">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>KST</title>
+    <!--[if lt IE 9]>
+    <script src="../pub/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="../pub/reset.css">
+    <link rel="stylesheet" href="../pub/all.css">
+    <link rel="stylesheet" href="../pub/style.css">
+    <script src="../pub/jquery-1.10.2.min.js"></script>
+    <script src="../pub/jquery.touchSwipe.min.js"></script>
+    <script src="../pub/function.js"></script>
+    <script>
+        $(document).ready(function () {
+            fn_introSystem();
+        });
+    </script>
+</head>
+<body class="member">
+<header class="common">
+    <div class="bodyWrap">
+        <h1><a href="index.html">SGMS 선박온실가스 종합관리시스템 SHIP'S GREENHOUSE GASES MANAGEMENT SYSTEM</a></h1>
+        <div class="access">
+            <a href="#gnb">메뉴 바로가기</a>
+            <a href="#contents">내용 바로가기</a>
+        </div>
+        <nav class="top">
+            <a href="guide-05.html" target="_self">사이트맵</a>
+            <a href="#none" target="_self">ENGLISH</a>
+        </nav>
+        <button type="button" class="menu"><span>메뉴</span></button>
+    </div>
+</header>
+<nav class="gnb" id="gnb">
+    <div class="bodyWrap">
+        <button type="button" class="menu"><span>전체보기/닫기</span></button>
+        <section class="login">
+            <p>로그인이 필요한 서비스입니다</p>
+            <button type="button">로그인</button>
+        </section>
+        <ul class="menu">
+            <li>
+                <button type="button" class="on">SGMS소개</button>
+                <div class="depth2">
+                    <ul>
+                        <li><a href="intro-system.html" target="_self">SGMS 소개</a></li>
+                        <li><a href="intro-search.html" target="_self">일제조사</a></li>
+                        <li><a href="intro-target.html" target="_self">목표관리제</a></li>
+                        <li><a href="intro-IMO.html" target="_self">IMO DCS</a></li>
+                        <li><a href="intro-BI.html" target="_self">BI</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <button type="button">통계정보</button>
+                <div class="depth2">
+                    <dl>
+                        <dt>선박 통계정보</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#none" target="_self">선박 통계정보 소개</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>연안해운 통계정보</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#none" target="_self">선종별배출현황 </a></li>
+                                <li><a href="#none" target="_self">톤급별배출현황 </a></li>
+                                <li><a href="#none" target="_self">선박등록관청별배출현황 </a></li>
+                                <li><a href="#none" target="_self">선박연료유사용현황 </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>국제해운 통계정보</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#none" target="_self">선박연도별배출량현황 </a></li>
+                                <li><a href="#none" target="_self">톤급별(총톤수)배출현황 </a></li>
+                                <li><a href="#none" target="_self">톤급별(적재톤수)배출현황 </a></li>
+                                <li><a href="#none" target="_self">선박연료유사용현황 </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+            <li>
+                <button type="button">정책&middot;기술정보</button>
+                <div class="depth2">
+                    <dl>
+                        <dt>정책 정보</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="policy-01-list.html" target="_self">해양수산부</a></li>
+                                <li><a href="policy-02-list.html" target="_self">환경부</a></li>
+                                <li><a href="policy-03-list.html" target="_self">국무조정실</a></li>
+                                <li><a href="policy-04-list.html" target="_self">IMO</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>기술 정보</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="tech-01-list.html" target="_self">저항절감기술</a></li>
+                                <li><a href="tech-02-list.html" target="_self">부가물개선기술</a></li>
+                                <li><a href="tech-03-list.html" target="_self">선박기관개선기술</a></li>
+                                <li><a href="tech-04-list.html" target="_self">운항효율화기술</a></li>
+                                <li><a href="tech-05-list.html" target="_self">추진장치개선기술</a></li>
+                                <li><a href="tech-06-list.html" target="_self">감축효과게시판</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+            <li>
+                <button type="button">법령정보</button>
+                <div class="depth2">
+                    <ul>
+                        <li><a href="legal-01-list.html" target="_self">UNFCCC</a></li>
+                        <li><a href="legal-02-list.html" target="_self">IMO</a></li>
+                        <li><a href="legal-03-list.html" target="_self">국내법령</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <button type="button">SGMS 교육</button>
+                <div class="depth2">
+                    <dl>
+                        <dt>교육수강관리</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="edu-01-list.html" target="_self">연간 교육계획</a></li>
+                                <li><a href="edu-02-list.html" target="_self">개설 교육(수강신청)</a></li>
+                                <li><a href="edu-03-list.html" target="_self">나의 교육조회</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>교육 컨텐츠</dt>
+                        <dd>
+                            <ul>
+                                <li><a href="#none" target="_self">법(제도) 소개</a></li>
+                                <li><a href="edu-05.html" target="_self">교육 동영상</a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div>
+            </li>
+            <li>
+                <button type="button">이용안내</button>
+                <div class="depth2">
+                    <ul>
+                        <li><a href="guide-01-list.html" target="_self">공지사항</a></li>
+                        <li><a href="guide-02-list.html" target="_self">시스템활용 가이드</a></li>
+                        <li><a href="guide-03-list.html" target="_self">Q&amp;A</a></li>
+                        <li><a href="guide-04.html" target="_self">FAQ</a></li>
+                        <li><a href="guide-05.html" target="_self">사이트맵</a></li>
+                        <li><a href="guide-06.html" target="_self">개인정보처리방침</a></li>
+                        <li><a href="guide-07.html" target="_self">이메일무단 수집거부</a></li>
+                        <li><a href="guide-08.html" target="_self">문의처</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main class="sub intro system" id="contents">
+    <nav class="lnb">
+        <h2><span>SGMS 소개</span></h2>
+        <a href="intro-system.html" target="_self" class="on">시스템소개</a>
+        <a href="intro-search.html" target="_self">일제조사</a>
+        <a href="intro-target.html" target="_self">목표관리제</a>
+        <a href="intro-IMO.html" target="_self">IMO DCS</a>
+        <a href="intro-BI.html" target="_self">BI</a>
+    </nav>
+    <header class="page">
+        <h3>시스템소개</h3>
+        <ol class="location">
+            <li>HOME</li>
+            <li>SGMS 소개</li>
+            <li>시스템소개</li>
+        </ol>
+    </header>
+    <article class="overview">
+        <h4>
+            선박 온실가스 종합관리 시스템<br>
+            <span class="sub">(Ship Greenhouse Gas Management System, SGMS)</span>
+        </h4>
+        <p>선박 온실가스 종합관리시스템(SGMS)은 국내∙외 해운부문에서 발생하는 온실가스 및 대기오염물질 등을 체계적으로 관리하기 위해 연안해운 온실가스 배출량 일제조사 실시, 해운부문 온실가스∙에너지
+            목표관리제 운영, 국제해사기구(IMO) 선박연료유 사용정보의무보고제도(DCS) 업무수행 등을 지원하고, 해양수산부 등록시스템 등과 연계를 통한 선박∙해운사 등록정보 등을 수집하여 배출량 분석 및
+            통계정보를 제공합니다.</p>
+        <dl class="infographic">
+            <dt>SGMS</dt>
+            <dd>
+                <ul>
+                    <li>
+                        <dl>
+                            <dt>연안해운 온실가스<br> 배출량 일제조사 </dt>
+                            <dd>해운부문 선백연료유<br>사용량(연간) 조사</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>목표관리</dt>
+                            <dd>해운부문 온실가스∙에너지<br>목표관리제 운영</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>IMO DCS</dt>
+                            <dd>IMO 선박연료유<br>사용정보 수집∙제출</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>통계DB</dt>
+                            <dd>다차원 통계분석<br>조회 및 출력</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <dl>
+                            <dt>외부연계</dt>
+                            <dd>선박∙해운사 등록정보<br>수집∙활용</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </dd>
+        </dl>
+    </article>
+    <article class="purpose">
+        <h4>시스템 개발 배경</h4>
+        <p>선박 온실가스 종합관리시스템(SGMS)은 2030년 국가 온실가스 감축목표 달성, 국제해사기구(IMO) 선박연료유 사용정보의무보고제도(DCS) 이행기반 구축 및 체계적인 선박온실가스 관리를
+            목적으로 개발되었습니다.</p>
+        <ul class="infographic">
+            <li class="national">
+                <dl>
+                    <dt>국내</dt>
+                    <dd>국가 온실가스<br>감축목표 달성</dd>
+                </dl>
+                <ul>
+                    <li>2030년 배출전망치(BAU) 대비 37% 감축, 해운부문 19.1만톤 감축</li>
+                    <li>해운 부문 온실가스 · 에너지 목표 관리제 시행</li>
+                </ul>
+            </li>
+            <li class="international">
+                <dl>
+                    <dt>국제</dt>
+                    <dd>IMO DCS<br>이행기반 구축</dd>
+                </dl>
+                <ul>
+                    <li>총톤수 5,000톤 이상 국제 항해 선박을 대상으로 연료유 사용량 조사(MARPOL Annex Ⅵ, Reg.22A)</li>
+                    <li>전자적 보고체계 구축을 통한 제도 이행</li>
+                    <li>효율성∙편의성 증진</li>
+                </ul>
+            </li>
+            <li class="corporation">
+                <dl>
+                    <dt>해운사</dt>
+                    <dd>온실가스<br>배출정보 제공</dd>
+                </dl>
+                <ul>
+                    <li>온실가스 배출통계 조회 및 출력</li>
+                    <li>해운사 배출정보 등 이력관리</li>
+                </ul>
+            </li>
+        </ul>
+    </article>
+    <article class="feature">
+        <h4>주요 기능</h4>
+        <p>선박 온실가스 종합관리시스템(SGMS)은 연안해운 온실가스 배출량 일제조사 전자적 방식 지원, 해운부문 온실가스•에너지 목표관리 운영 등에 관한 지원, 국제해사기구(IMO) 선박연료유
+            사용정보의무보고제도(DCS) 시행 지원, 외부연계를 통한 통계 DB구축과 다차원 분석, 관련정보 조회 및 출력 등의 기능 구현</p>
+        <ul class="infographic">
+            <li>
+                <dl>
+                    <dt>일제조사</dt>
+                    <dd>해운사/선박별 “연료유 사용량 일제조사표” on-line 작성•제출</dd>
+                    <dd>온실가스 배출량•에너지 소비량 자동산정</dd>
+                    <dd>보고서 조회 및 출력</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>목표관리제</dt>
+                    <dd>관리업체 명세서 조회, 이행실적 관리</dd>
+                    <dd>관리업체 예상배출량 자료 업로드, 감축목표 설정 지원</dd>
+                    <dd>관리업체(사업장)별 목표관리제 이행 현황 시각화 및 알림</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>IMO DCS</dt>
+                    <dd>Data보고서, BDN요약본, Data요약본 제출 및 관리</dd>
+                    <dd>Data 검증 현황 및 검증결과 관리</dd>
+                    <dd>DCS Data의 IMO 제출을 위한 제반조치 이행</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>통계DB</dt>
+                    <dd>OLAP(통계 전문 솔루션)을 이용한 배출정보의 다차원 분석</dd>
+                    <dd>통계 일반정보에 대한 대국민 서비스 제공</dd>
+                </dl>
+            </li>
+            <li>
+                <dl>
+                    <dt>외부연계</dt>
+                    <dd>선박∙해운사 등록정보, 선박 입출항 정보 수집∙활용</dd>
+                    <dd>온실가스 규제 이행 및 통계 다각화 기반 구축</dd>
+                </dl>
+            </li>
+        </ul>
+    </article>
+    <article class="construction">
+        <h4>SGMS 구성도</h4>
+        <p>선박 온실가스 종합관리시스템(SGMS)은 연안해운 온실가스 배출량 일제조사, 해운부문 온실가스∙에너지 목표관리제, 국제해사기구(IMO) 선박연료유 사용정보의무보고제도(DCS) 업무지원 메뉴와
+            외부 Data, 통계DB 등으로 구성</p>
+        <div class="infographic">
+            <dl class="menu">
+                <dt>구성메뉴</dt>
+                <dd class="main">
+                    <ul>
+                        <li class="research">
+                            <dl>
+                                <dt>연안해운 온실가스배출량 <br>일제조사</dt>
+                                <dd>해운부문 선박연료유<br>사용량(연간) 조사</dd>
+                            </dl>
+                        </li>
+                        <li class="goal">
+                            <dl>
+                                <dt>해운부문 온실가스∙에너지<br>목표관리제</dt>
+                                <dd>온실가스 감축목표<br>달성을 위한 관리업체 관리</dd>
+                            </dl>
+                        </li>
+                        <li class="IMO">
+                            <dl>
+                                <dt>IMO DCS</dt>
+                                <dd>IMO 온실가스 저감대책<br>수립을 위한 국제해운<br>선박 연료유 사용량 등<br>Data 제출</dd>
+                            </dl>
+                        </li>
+                        <li class="DB">
+                            <dl>
+                                <dt>통계DB</dt>
+                                <dd>해운사별, 선박별,<br>유종별 통계 및 분석<br>조회 및 출력</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </dd>
+                <dd class="sub">
+                    <ul>
+                        <li>교육사이트</li>
+                        <li>감축기술</li>
+                        <li>법령정보</li>
+                        <li>정책자료</li>
+                    </ul>
+                </dd>
+            </dl>
+            <div class="application org">
+                <dl>
+                    <dt>연계기관</dt>
+                    <dd>
+                        <ul>
+                            <li><span>통합<br>PORT-MIS</span></li>
+                            <li><span>선박검사<br>정보시스템<br><span class="sub">(한국선급, 프랑스선급,<br>선박안전기술공단)</span></span></li>
+                            <li><span>수선정보<br>통합시스템</span></li>
+                            <li><span>해운사<br>일일보고<br><span class="sub">(Open API 활용)</span></span></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <ul class="use">
+                    <li><span class="lw">자</span><span class="lw">료</span><span class="lw">연</span><span
+                            class="lw">계</span></li>
+                    <li><span class="lw">수</span><span class="lw">집</span><span class="lw">체</span><span
+                            class="lw">계</span></li>
+                </ul>
+            </div>
+            <div class="application user">
+                <dl>
+                    <dt>사용자</dt>
+                    <dd>
+                        <ul>
+                            <li><span>해운사</span></li>
+                            <li><span>검증기관</span></li>
+                            <li><span>일반 국민</span></li>
+                            <li><span>해양수산부,<br>시스템운영기관</span></li>
+                        </ul>
+                    </dd>
+                </dl>
+                <ul class="use">
+                    <li><span class="lw">배</span><span class="lw">출</span><span class="lw">량</span><span
+                            class="lw space">업</span><span class="lw">로</span><span class="lw">드</span></li>
+                    <li><span class="lw">데</span><span class="lw">이</span><span class="lw">터</span><span
+                            class="lw space">제</span><span class="lw">출</span></li>
+                </ul>
+            </div>
+        </div>
+    </article>
+</main>
+<footer class="common">
+    <section class="information">
+        <div class="bodyWrap">
+            <ul class="policy">
+                <li><a href="guide-06.html" target="_self">개인정보 처리방침</a></li>
+                <li><a href="guide-07.html" target="_self">이메일 무단수집 거부</a></li>
+            </ul>
+            <h2>해양수산부</h2>
+            <address><span class="postNum">30110</span> <span class="ww">세종특별자치시 다솜2로 94(어진동) 정부세종청사 5동</span></address>
+            <dl class="contact">
+                <dt>해양수산부안내전화</dt>
+                <dd>044-330-2380</dd>
+            </dl>
+            <p>Copyright (C) © Ministry of Oceans and Fisheries. <span class="ww">All rights reserve</span></p>
+        </div>
+    </section>
+</footer>
+</body>
+</html>
